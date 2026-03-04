@@ -584,6 +584,7 @@ async function runUpdate(): Promise<void> {
     // Use skills CLI to reinstall with -g -y flags
     const result = spawnSync('npx', ['-y', 'skills', 'add', installUrl, '-g', '-y'], {
       stdio: ['inherit', 'pipe', 'pipe'],
+      shell: process.platform === 'win32',
     });
 
     if (result.status === 0) {
