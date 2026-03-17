@@ -326,6 +326,7 @@ The CLI searches for skills in these locations within a repository:
 - `.continue/skills/`
 - `.cortex/skills/`
 - `.crush/skills/`
+- `.deepagents/skills/`
 - `.factory/skills/`
 - `.goose/skills/`
 - `.junie/skills/`
